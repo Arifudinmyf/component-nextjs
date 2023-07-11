@@ -59,7 +59,8 @@
         "test"
       ]
     },
-    "incremental": true
+    "incremental": true,
+    "noImplicitAny": false
   },
   "include": [
     "next-env.d.ts",
