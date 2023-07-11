@@ -1,0 +1,31 @@
+.content_header {
+    @apply p-2 flex justify-center items-center;
+
+    .content_label {
+        @apply flex justify-center items-center;
+
+        .switch_button {
+            @apply relative cursor-pointer w-16 h-9 outline-none rounded-full appearance-none bg-gray-700 shadow-md;
+
+        }
+        :checked {
+            @apply  bg-blue-50 transition duration-200;
+        }
+
+        ::after {
+            content: url('../../../../public/icons/sun.svg') ;
+            top: -2px;
+            @apply w-10 h-10 rounded-full bg-yellow-500 absolute left-0 transform scale-110 transition duration-200 p-1 shadow-md;
+        }
+
+        :checked::after {
+            content: url('../../../../public/icons/moon.svg');
+            top: -2px;
+            @apply transform scale-110 translate-x-6 bg-gray-700 p-1 shadow-md;
+        }
+
+        :hover {
+            @apply shadow-lg;
+        }
+    }
+}
