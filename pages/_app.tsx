@@ -1,11 +1,11 @@
 import { RootStoreProvider } from "@mobx";
 import "@styles/global.scss";
 import { AppProps } from "next/app";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { DehydratedState, QueryClient, QueryClientProvider } from "react-query";
 import { Hydrate } from "react-query/hydration";
 import "tailwindcss/tailwind.css";
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function MyApp({ Component, pageProps }: AppProps<{ dehydratedState: DehydratedState }>): JSX.Element { // jika Error dehydratedState Tambahkan <{ dehydratedState: DehydratedState }>
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>

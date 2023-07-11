@@ -126,6 +126,47 @@ Docker simplifies and accelerates your workflow, while giving developers the fre
 
 [Go To Documentation](https://www.docker.com/get-started)
 
+### **TECH TOOLS**
+
+```bash
+    C:\PROJECT\NEXT JS>npx superplate-cli component-nextjs
+    √ Cloned remote source successfully.
+    √ Choose a project template · nextjs
+    √ What would you like to name your project?: · component-nextjs
+    √ UI framework: · tailwind
+    √ CSS Preprocessor: · scss
+    √ Features: · fetch,axios,svgr,env,reverse-proxy
+    √ Hooks · swr,react-query,react-use
+    √ State Management: · mobx
+    √ Do you want to use Mobx State Tree ? · none
+    √ i18n - Internationalization · next-i18next
+    √ Linting tools: · eslint
+    √ Do you want to use lint-staged? · none
+    √ Testing Framework: · testing-library
+    √ E2E Testing framework: · cypress
+    √ Docker integration: · Docker
+    √ Continuous integration: · none
+
+    Success! Created component-nextjs at C:\PROJECT\NEXT JS/component-nextjs
+
+    You can run several commands:
+
+    npm run dev
+        Starts the development server.
+
+    npm run build
+        Bundles the app for production.
+
+    npm run start
+        Starts the production server.
+
+    Start developing by typing:
+
+    cd component-nextjs
+    npm run dev
+```
+
 ## License
 
 MIT
+"# component-nextjs" 
