@@ -164,6 +164,13 @@ Docker simplifies and accelerates your workflow, while giving developers the fre
 
     cd component-nextjs
     npm run dev
+
+    npm i create-react-component-folder --->>> install didalam project (https://www.npmjs.com/package/create-react-component-folder)
+	$ npm install --save-dev create-react-component-folder
+	$ npx crcf myComponent
+	npx crcf create --help
+	jika membuat dengan tsx(typeScript)
+	npx crcf myComp1 --scss --functional --typescript --notest
 ```
 
 ## License
