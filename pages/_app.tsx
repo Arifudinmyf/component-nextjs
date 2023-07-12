@@ -1,3 +1,4 @@
+import { appWithTranslation } from "next-i18next";
 import { RootStoreProvider } from "@mobx";
 import "@styles/global.scss";
 import { AppProps } from "next/app";
@@ -18,4 +19,4 @@ function MyApp({ Component, pageProps }: AppProps<{ dehydratedState: DehydratedS
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

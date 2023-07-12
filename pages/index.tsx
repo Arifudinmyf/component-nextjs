@@ -1,14 +1,12 @@
 import React from "react";
 
-import { Cards, Container, Footer, Header, Main } from "@components";
+import { Container } from "@components";
+import TranslateComponent from "@components/components/translate-component";
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Header />
-      <Main />
-      <Cards />
-      <Footer />
+      <TranslateComponent />
     </Container>
   );
 };
