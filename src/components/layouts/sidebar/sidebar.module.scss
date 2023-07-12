@@ -47,7 +47,7 @@
         }
 
         .title_submenu {
-            @apply flex items-center text-gray-300 text-sm gap-x-4 cursor-pointer p-2 px-5 rounded-md; 
+            @apply flex items-center text-gray-300 text-sm gap-x-4 cursor-pointer p-1 px-5 rounded-md; 
 
             .icon_title_submenu {
                 @apply text-2xl block float-left;
