@@ -1,14 +1,12 @@
 import React from "react";
 
-import { Cards, Container, Footer, Header, Main } from "@components";
+import { Container } from "@components";
+import Layouts from "@components/layouts/layouts";
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Header />
-      <Main />
-      <Cards />
-      <Footer />
+      <Layouts />
     </Container>
   );
 };

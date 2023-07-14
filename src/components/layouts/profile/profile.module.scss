@@ -1,0 +1,186 @@
+.content_aside {
+    @apply relative;
+
+    .profiles {
+        background: rgba(255,255,255,0.15);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255,255,255,0.075);
+        @apply shadow rounded-lg p-10;
+
+        .header_title {
+            @apply flex flex-col gap-1 text-center items-center;
+
+            .title {
+                @apply font-semibold text-dark-purple;
+            }
+            .address {
+                @apply flex justify-center items-center text-sm leading-normal text-gray-500;
+            }
+        }
+
+        .experiences {
+            @apply flex justify-center items-center gap-2 my-3;
+
+            .desc {
+                @apply font-semibold text-center mx-4;
+
+                .total {
+                    @apply text-dark-purple text-xs lg:text-base;
+                }
+
+                .dec {
+                    @apply text-gray-500 text-xs lg:text-base
+                }
+            }
+        }
+    }
+
+    .skills {
+        background: rgba(255,255,255,0.15);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255,255,255,0.075);
+        @apply shadow mt-6 rounded-lg p-6;
+
+        .title_skill {
+            @apply text-dark-purple text-sm font-semibold mb-4;
+        }
+        .content_sub {
+            @apply flex items-center justify-center space-x-2;
+
+            .subs {
+                @apply flex flex-col items-center space-y-2;
+
+                .title_icon {
+                    @apply flex justify-center items-center text-lg bg-white rounded-full p-2;
+                }
+
+                .title_text {
+                    @apply text-xs text-gray-500
+                }
+            }
+        }
+    }
+
+    .roll {
+        background: rgba(255,255,255,0.15);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255,255,255,0.075);
+        @apply shadow mt-6 rounded-lg p-6;
+
+        .title_roll {
+            @apply text-gray-600 text-sm font-semibold mb-4;
+        }
+
+        .desc_roll {
+            @apply flex items-center justify-between list-disc;
+
+            .titles {
+                @apply ml-4 text-xs text-gray-600 font-medium lg:text-sm;
+            }
+
+            .desc {
+                @apply text-xs text-gray-600 font-medium lg:text-sm
+            }
+        }
+    }
+
+    .study {
+        background: rgba(255,255,255,0.15);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255,255,255,0.075);
+        @apply flex shadow mt-6 rounded-lg p-6;
+
+        .images {
+            @apply w-20 object-cover h-20 rounded-xl flex justify-center items-center
+        }
+
+        .content_univ {
+            @apply flex flex-col justify-center w-full px-2 py-1;
+
+            .contens {
+                @apply flex relative w-full;
+
+                .title_univ {
+                    @apply block w-48 lg:w-full;
+
+                    .conten_univ {
+                        @apply relative;
+
+                        .sub_univs {
+                            @apply flex flex-col;
+
+                            .contents_title {
+                                @apply flex justify-start items-center;
+
+                                .icon_univ {
+                                    @apply h-6 w-6 flex justify-center items-center;
+                                }
+
+                                .field_text {
+                                    @apply text-xs font-medium ml-2 lg:text-base;
+                                }
+                            }
+
+                            .content_majors {
+                                @apply flex justify-between;
+
+                                .sub_majors {
+                                    @apply flex items-center ml-6;
+
+                                    .images_major {
+                                        @apply h-5 w-5 mr-2 flex items-center;
+                                    }
+                                    .title_majors {
+                                        @apply text-xs font-medium text-dark-purple flex items-center;
+                                    }
+                                }
+                                .between_majors {
+                                    @apply flex justify-end items-center text-xs text-dark-purple;
+                                }
+                            }
+                        }
+                    }
+
+                    // .content_ipk {
+                    //     @apply  flex pt-2 text-gray-400;
+
+                    //     .sub_ipk {
+                    //         @apply flex items-center mr-auto ml-6;
+
+                    //         .images_ipk {
+                    //             @apply  h-5 w-5 mr-2;
+                    //         }
+                    //         .title_ipk {
+                    //             @apply text-xs font-normal;
+                    //         }
+                    //         .value_ipk {
+                    //             @apply text-xs font-normal
+                    //         }
+                    //     }
+                    // }
+                }
+    
+                .bookmarks {
+                    @apply  lg:flex lg:w-16 justify-end items-end hidden;
+
+                    .content_bookmark {
+                        @apply  relative right-0 flex items-end;
+
+                        .images_bookmark {
+                            @apply h-5 w-5 cursor-pointer;
+                        }
+                    }
+                }
+                // @screen lg {
+                //     @apply grid grid-cols-2 w-full
+                // }
+            }
+
+
+        }
+    }
+}
